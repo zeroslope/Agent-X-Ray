@@ -1,0 +1,3 @@
+# MVP reports layers before effective merge
+
+The first `axray` MVP will report Codex configuration layers, layer status, provenance, and obvious rule issues without attempting to fully compute every effective merged config value. Reproducing Codex's merge semantics requires deeper source tracking and an update strategy for upstream Codex changes, so the MVP should avoid presenting partial merge logic as authoritative while still explaining the layer stack users need to inspect. The MVP JSON should therefore avoid top-level `effective` or `effectiveConfig` fields until a real Codex merge resolver exists.

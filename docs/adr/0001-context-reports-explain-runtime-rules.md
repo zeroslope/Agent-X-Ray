@@ -1,0 +1,3 @@
+# Context reports explain runtime rules
+
+Agent X-Ray will produce context reports that explain an agent product's runtime loading rules, not raw filesystem inventories. The MVP may emit JSON only, but that JSON must distinguish active context from inactive sources and include the product-specific reason a discovered source does or does not contribute to the session; otherwise `axray` would only duplicate generic file discovery and fail at its core job of making agent context understandable. Product-adjacent files, such as standard MCP `.mcp.json` or `mcp.json`, should only appear in a product-specific report after implementation research confirms the selected agent product actually considers them.
