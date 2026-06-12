@@ -28,6 +28,8 @@ Illegitimate reasons include:
 - Dressing up a style choice you could have made yourself as "options for the user"
 - Following up completed work with "would you like me to also do X, Y, Z?" these are post-hoc confirmations. The user can say "no thanks," but the default is to have done them
 
+## Agent skills
+
 ### Issue tracker
 
 Issues and PRDs are tracked in GitHub Issues for `zeroslope/Agent-X-Ray`. See `docs/agents/issue-tracker.md`.
@@ -39,3 +41,9 @@ Use the five default triage labels: `needs-triage`, `needs-info`, `ready-for-age
 ### Domain docs
 
 Use a single-context domain-doc layout: root `CONTEXT.md` plus root `docs/adr/`. See `docs/agents/domain.md`.
+
+## Hard Rules
+
+### Implementation
+
+- Prefer mature packages over reinventing the wheel.
